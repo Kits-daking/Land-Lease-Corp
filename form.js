@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loginForm.addEventListener("submit", (e) => {
             e.preventDefault();
             alert("Logged in");
-            window.location.href = "User Dashboard.html"; // your dashboard page
+            window.location.href = "User Dashboard.html"; 
         });
     }
 
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const confirmPassword = document.getElementById("confirmPassword").value.trim();
             const phone = document.getElementById("phoneNumber").value.trim();
 
-            // Validate phone: starts with 0 and exactly 10 digits
+            // Validate phone:
             const phoneRegex = /^0\d{9}$/;
             if (!phoneRegex.test(phone)) {
                 alert("Phone number must start with 0 and be exactly 10 digits.");
@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (logoutBtn) {
         logoutBtn.addEventListener("click", () => {
             alert("Logged out");
-            window.location.href = "Home.html"; // your landing page
+            window.location.href = "Home.html"; 
         });
     }
 });
+
